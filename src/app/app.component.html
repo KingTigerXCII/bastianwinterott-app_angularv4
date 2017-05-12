@@ -1,8 +1,22 @@
-<md-menu #appMenu="mdMenu">
-  <button md-menu-item> Settings </button>
-  <button md-menu-item> Help </button>
-</md-menu>
+<md-toolbar color="primary">
+  <button md-button>
+    <i class="material-icons">home</i>
+    <span>Welcome</span>
+  </button> 
+  <button md-button>
+    <i class="material-icons">info_outline</i>
+    <span>About me</span>
+  </button>
+  <button md-button>
+    <i class="material-icons">work</i>
+    <span>Projects</span>
+  </button>
+  <button md-button>
+    <div>
+      <!-- <img [src]="fullImagePath"> -->
+    </div>
+  </button> 
+</md-toolbar>
 
-<button md-icon-button [mdMenuTriggerFor]="appMenu">
-   <md-icon>Menu</md-icon>
-</button>
+<!-- Components -->
+<app-welcome></app-welcome>
