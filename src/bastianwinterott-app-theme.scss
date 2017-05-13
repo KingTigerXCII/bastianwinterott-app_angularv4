@@ -9,11 +9,11 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$bastianwinterott-app-primary: mat-palette($mat-indigo);
-$bastianwinterott-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$bastianwinterott-app-primary: mat-palette($mat-blue, 400);
+$bastianwinterott-app-accent:  mat-palette($mat-light-blue, 100);
 
 // The warn palette is optional (defaults to red).
-$bastianwinterott-app-warn:    mat-palette($mat-red);
+$bastianwinterott-app-warn:    mat-palette($mat-blue, 800);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $bastianwinterott-app-theme: mat-light-theme($bastianwinterott-app-primary, $bastianwinterott-app-accent, $bastianwinterott-app-warn);
