@@ -1,4 +1,33 @@
+img {
+    max-width: 100%;
+}
+
+nav ul {
+    display: block;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav li button {
+    width: 100%;
+}
+
+.navpoint {
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
 .github-image {
-    width: 28%;
+    width: 23px;
     vertical-align: middle;
+}
+
+@media all and (min-width: 1080px) {
+    nav ul {
+        display: flex;
+    }
 }

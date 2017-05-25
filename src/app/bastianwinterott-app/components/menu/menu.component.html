@@ -1,20 +1,39 @@
-<md-toolbar color="primary">
-  <button md-button>
-    <i class="material-icons">home</i>
-    <span>Welcome</span>
-  </button> 
-  <button md-button>
-    <i class="material-icons">info_outline</i>
-    <span>About me</span>
-  </button>
-  <button md-button>
-    <i class="material-icons">work</i>
-    <span>Projects</span>
-  </button>
-  <button md-button>
-    <div>
-      <img src="assets/images/github32.png" class="github-image">
-      <span>Github</span>
-    </div>
-  </button> 
-</md-toolbar>
+<nav>
+  <ul>
+
+    <!-- Welcome navigation point -->
+    <li>
+      <button md-button>
+        <i class="material-icons">home</i>
+        <span class="navpoint">Welcome</span>
+      </button>
+    </li>
+
+    <!-- About me navigation point -->
+    <li>
+      <button md-button>
+        <i class="material-icons">info</i>
+        <span class="navpoint">About me</span>
+      </button>
+    </li>
+
+    <!-- Projects navigation point -->
+    <li>
+      <button md-button>
+        <i class="material-icons">work</i>
+        <span class="navpoint">Projects</span>
+      </button>
+    </li>
+
+    <!-- Github navigation point -->
+    <li>
+      <button md-button>
+        <span>
+          <img src="assets/images/github.png" class="github-image">
+          <span class="navpoint">Github</span>
+        </span>
+      </button>  
+    </li>
+
+  </ul>
+</nav>

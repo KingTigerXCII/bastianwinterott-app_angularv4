@@ -10,13 +10,17 @@ import { MdButtonModule } from '@angular/material';
 import { MenuComponent } from './components/menu/menu.component';
 import { ContentComponent } from './components/content/content.component';
 
-import { WelcomeComponent } from './components/welcome/welcome.component';
+import { WelcomeComponent } from './components/content/welcome/welcome.component';
+import { AboutmeComponent } from './components/content/aboutme/aboutme.component';
+import { ProjectsComponent } from './components/content/projects/projects.component';
 
 @NgModule({
   declarations: [
     MenuComponent,
     ContentComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutmeComponent,
+    ProjectsComponent
   ],
   imports: [
     FormsModule,
