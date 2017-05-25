@@ -53,6 +53,11 @@ table {
 
 * {
     font-family: 'Inconsolata', monospace;
-    margin: 0;
     text-align: justify;
+}
+
+@media all and (min-width: 768px) {
+	* {
+		font-size: 1.1em;
+	}
 }
