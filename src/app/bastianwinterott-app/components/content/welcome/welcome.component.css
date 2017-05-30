@@ -5,4 +5,23 @@
 
 .content {
     margin: 3%;
+    letter-spacing: 2px;
+}
+
+.article {
+    max-width: 800px;
+}
+
+.articleHeadline {
+    font-weight: bold;
+}
+
+.articleCreatedDate {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.articleText {
+    padding: 0.8em;
+    border-top: 1px dotted rgba(0, 0, 0, 0.2);
 }
