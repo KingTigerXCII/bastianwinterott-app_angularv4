@@ -2,26 +2,35 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { Routes, RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdToolbarModule } from '@angular/material';
 import { MdCardModule } from '@angular/material';
 import { MdButtonModule } from '@angular/material';
 
+import { BastianwinterottAppComponent } from './container/bastianwinterott-app.component';
+
 import { MenuComponent } from './components/menu/menu.component';
-import { ContentComponent } from './components/content/content.component';
 
 import { WelcomeComponent } from './components/content/welcome/welcome.component';
 import { AboutmeComponent } from './components/content/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/content/projects/projects.component';
 
+
+export const ROUTES: Routes = [
+  { path: '', component: WelcomeComponent },
+  { path: 'aboutme', component: AboutmeComponent },
+  { path: 'projects', component: ProjectsComponent }
+];
+
 @NgModule({
   declarations: [
     MenuComponent,
-    ContentComponent,
     WelcomeComponent,
     AboutmeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BastianwinterottAppComponent
   ],
   imports: [
     CommonModule,
@@ -30,12 +39,12 @@ import { ProjectsComponent } from './components/content/projects/projects.compon
     BrowserAnimationsModule,
     MdToolbarModule,
     MdCardModule,
-    MdButtonModule
+    MdButtonModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   exports: [
-    MenuComponent,
-    ContentComponent
+    BastianwinterottAppComponent
   ]
 })
 export class BastianWinterottModule {}

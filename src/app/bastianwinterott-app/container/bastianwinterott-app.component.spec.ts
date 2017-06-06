@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentComponent } from './content.component';
+import { BastianwinterottAppComponent } from './bastianwinterott-app.component';
 
-describe('ContentComponent', () => {
-  let component: ContentComponent;
-  let fixture: ComponentFixture<ContentComponent>;
+describe('BastianwinterottAppComponent', () => {
+  let component: BastianwinterottAppComponent;
+  let fixture: ComponentFixture<BastianwinterottAppComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContentComponent ]
+      declarations: [ BastianwinterottAppComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContentComponent);
+    fixture = TestBed.createComponent(BastianwinterottAppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

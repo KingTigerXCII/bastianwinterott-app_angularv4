@@ -4,7 +4,7 @@
 <div class="content">
     <div class="article" *ngFor="let article of articles">
       <p class="articleHeadline">{{ article.headline }}</p>
-      <p class="articleCreatedDate">{{ article.createdDate }}</p>
+      <p class="articleCreatedDate">{{ article.createdDate | date }}</p>
       <p class="articleText">{{ article.text }}</p>
     </div> 
 </div>

@@ -13,7 +13,7 @@ export class WelcomeComponent implements OnInit {
   constructor() {
 
     let article: Article = {
-      createdDate: new Date('February 4, 2016 10:13:00'),
+      createdDate: new Date('June 6, 2016 20:58:00'),
       headline: 'The First',
       text:
         `
